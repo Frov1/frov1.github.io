@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body{
+    background: linear-gradient(to bottom right,rgb(46, 12, 75), rgb(209, 63, 209));
+    margin: 0;
+}
+
+.todo{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+.izq, .der{
+    width: 47%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-1{
+    width: 100%;
+    height: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.carrusel{
+    width: 97%;
+    height: 97%;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.carrusel ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    height: 100%;
+
+    animation-name: deslice;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function: ease-in-out;
+}
+li{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+@keyframes deslice{
+    0%{margin-left: 0%;}
+    30.3%{margin-left: 0%;}
+
+    33.3%{margin-left: -100%;}
+    63.6%{margin-left: -100%;}
+
+    66.6%{margin-left: -200%;}
+    96.9%{margin-left: -200%;}
+}
+
+.linea-1{
+    width: 2px;
+    height: 50%;
+    background-color: white;
+    align-self: flex-end;
+}
+
+.cont-2{
+    width: 100%;
+    height: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.linea-2{
+    width: 50%;
+    height: 2px;
+    background-color: white;
+}
+
+.linea-3{
+    width: 25%;
+    height: 5px;
+    background-color: white;
+    border-radius: 0 0 0 20px;
+}
+
+.der{
+    gap: 20px;
+}
+
+.arriba{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.lineas{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.linea-4{
+    width: 10px;
+    height: 40%;
+    background-color: #2E0831;
+    border-radius: 0 0 0 20px;
+}
+.linea-5{
+    width: 7px;
+    height: 100%;
+    background-color: #2E0831;
+}
+
+.texto{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.texto h1{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #2E0831;
+    font-size:4vw;
+    margin: 0;
+}
+
+.texto p{
+    color: #2E0831;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.abajo{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.abajo a{
+    width: 25%;
+    height: 75%;
+    background-color: #2E0831;
+    border: none;
+    margin: 0;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-decoration: none;
+}
+
+.abajo p{
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.5vw;
+}
+.img-1{
+    width: 40%;
+    height: 70%;
+    background-image: url(./icons8-flecha-30.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+a:hover{
+    background-color: white;
+    .img-1{
+        background-image: url(./icons8-flecha-30\ \(1\).png);
+    }
+    .txt{
+        color: #2E0831;
+ 
+    }
+    
+}
+
